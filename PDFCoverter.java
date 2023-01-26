@@ -16,7 +16,7 @@ public class PDFConverter {
         String text = pdfStripper.getText(document);
         document.close();
         // escribir el texto extraido a un archivo de word
-        FileOutputStream fos = new FileOutputStream("document.doc");
+        FileOutputStream fos = new FileOutputStream("document.docx");
         OutputStreamWriter osw = new OutputStreamWriter(fos);
         osw.write(text);
         osw.flush();
